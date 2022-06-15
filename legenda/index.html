@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+	<title>LEGENDA</title>
+
+
+
+	<style>
+
+		.clearfix:before,
+		.clearfix:after {
+			content: " "; /* 1 */
+			display: table; /* 2 */
+		}
+
+		.clearfix:after {
+			clear: both;
+		}
+
+		/**
+		 * For IE 6/7 only
+		 * Include this rule to trigger hasLayout and contain floats.
+		 */
+		.clearfix {
+			*zoom: 1;
+		}
+
+		body {
+		  font-family: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
+		  color: #00000;
+		   
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		}
+
+		/* Start the styles  */
+		p {
+		  line-height: 1.5;
+		  width: 230px;
+		  text-align: left;
+		  font-weight: bold;
+		 
+		}
+		
+		h1 {
+		  margin-bottom: 100;
+		}
+		h2 {
+		  margin-top: 10px;
+		  font-weight: 400;
+		  line-height: 1.2;
+		}
+
+		.wrapper {
+		  padding: 5% 1% 5% 1%;
+		  max-width: 100%;
+		  margin-right: auto;
+		  margin-left: auto;
+		  display: inline-block;
+			  
+		}
+		.circle {
+		  background-repeat: no-repeat;
+		  width: 25px;
+		  height: 25px;
+		  background-color: #fffff; 
+		  border-radius: 50%;
+		  float: left;
+		  shape-outside: circle() margin-box;
+		  margin: 10px;   
+		  border: 3px solid #000;
+		}
+
+		.circle2 {
+		  background-repeat: no-repeat;
+		  width: 25px;
+		  height: 25px;
+		  background-color: #ffff00;
+		  border-color:#0000;
+		  border: 2px solid #000;
+		  border-radius: 50%;
+		  float: left;
+		  shape-outside: circle() margin-box;
+		  margin: 10px;      
+		}
+
+		.circle3 {
+		  background-repeat: no-repeat;
+		  width: 25px;
+		  height: 25px;
+		  background-color: #ff6400;
+		  border-color:#ff6400;
+		  border: 2px solid #000;
+		  border-radius: 50%;
+		  float: left;
+		  shape-outside: circle() margin-box;
+		  margin: 10px;       
+		}
+
+		.circle4 {
+		  background-repeat: no-repeat;
+		  width: 25px;
+		  height: 25px;
+		  background-color: #ff0000;
+		  border-color:#ff6400;
+		  border: 2px solid #000;
+		  border-radius: 50%;
+		  float: left;
+		  shape-outside: circle() margin-box;
+		  margin: 10px;      
+		}
+
+		.margim{
+		  border: 2px solid #000;
+		  text-align: center;
+		  width: 70%;			
+		}
+
+
+	</style>
+
+
+	<body>	
+		
+		<div class="support-css-shapes margim">	
+			
+			<div class="wrapper clearfix">
+				<div class="circle4"></div><p>ITEM</p>
+			</div>
+			
+			<div class="wrapper clearfix">
+				<div class="circle3"></div><p>ITEM</p>
+			</div>
+
+			<div class="wrapper clearfix">
+				<div class="circle2"></div><p>ITEM</p>
+			</div>
+			
+			<div class="wrapper clearfix">
+				<div class="circle"></div><p>ITEM</p>
+			</div>		
+		
+		</div>
+		
+	</body>
+
+
+</html>
+
+
+
+
+
